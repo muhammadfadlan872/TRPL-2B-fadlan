@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007acc;
+  animation: fadeInDown 1s ease-out;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.lesson {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.lesson:hover {
+  transform: scale(1.02);
+}
+
+.lesson h2 {
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.lesson p,
+.lesson ul {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #007acc;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
